@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Etch-A-Sketch</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="main-heading">Etch-A-Sketch</h1>
+    <div class="wrapper-container">
+      <div class="button-container">
+        <span class="dimensions-text">Current Grid Dimensions:</span>
+        <span class="grid-number">16 x 16</span>
+        <button class="adjust-button">Change grid size</button>
+
+        <div class="switch-section">
+          <span class="switch-text">Eraser</span>
+          <label class="switch">
+            <input type="checkbox" class="eraser-on-off" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="grid-container"></div>
+      </div>
+    </div>
+  </body>
 </html>
